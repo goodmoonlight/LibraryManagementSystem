@@ -103,7 +103,7 @@ public class LoginManager {
         // loginManager.pack(); //调整此窗口的大小，以适合其子组件的首选大小和布局
         jframe1.setResizable(false); // 设置窗体不可放大
         jframe1.setVisible(true); // 使窗体可见
-        jframe1.getContentPane().setBackground(Color.PINK);
+        jframe1.getContentPane().setBackground(Color.lightGray);//窗体背景颜色
         jframe1.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);// 释放窗体
     }
     //	public void setBg() {
