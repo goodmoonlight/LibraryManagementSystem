@@ -68,40 +68,40 @@ public class BooksManager extends JFrame implements ActionListener{
         menubar.add(returnMenu);
         menubar.add(exitMenu);
         // 设置三个菜单内容的字体样式及颜色，粗体，20，蓝色
-        manageMenu.setFont(new Font("", Font.BOLD, 20));
-        lendMenu.setFont(new Font("", Font.BOLD, 20));
-        returnMenu.setFont(new Font("", Font.BOLD, 20));
-        exitMenu.setFont(new Font("", Font.BOLD, 20));
+        manageMenu.setFont(new Font("楷体", Font.BOLD, 20));
+        lendMenu.setFont(new Font("楷体", Font.BOLD, 20));
+        returnMenu.setFont(new Font("楷体", Font.BOLD, 20));
+        exitMenu.setFont(new Font("黑体", Font.BOLD, 20));
 
         manageMenu.setForeground(Color.BLUE);
         lendMenu.setForeground(Color.BLUE);
         returnMenu.setForeground(Color.BLUE);
         exitMenu.setForeground(Color.BLUE);
 
-        insertMenuItem.setFont(new Font("", Font.BOLD, 20));
-        deleteMenuItem.setFont(new Font("", Font.BOLD, 20));
-        updateMenuItem.setFont(new Font("", Font.BOLD, 20));
-        selectMenuItem.setFont(new Font("", Font.BOLD, 20));
-        lendMenuItem.setFont(new Font("", Font.BOLD, 20));
-        lendRecordMenuItem.setFont(new Font("", Font.BOLD, 20));
-        returnMenuItem.setFont(new Font("", Font.BOLD, 20));
-        returnRecordMenuItem.setFont(new Font("", Font.BOLD, 20));
-        exitloadMenuItem.setFont(new Font("", Font.BOLD, 20));
+        insertMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        deleteMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        updateMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        selectMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        lendMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        lendRecordMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        returnMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        returnRecordMenuItem.setFont(new Font("楷体", Font.BOLD, 20));
+        exitloadMenuItem.setFont(new Font("黑体", Font.BOLD, 20));
 
         this.setJMenuBar(menubar); // 把菜单条添加到窗体中
         this.setSize(1000, 800); // 设置窗体大小
         Container con = this.getContentPane(); // 返回此窗体的 contentPane 对象 。
         con.add(desktop); // 把虚拟桌面添加到此容器中
-        JLabel label = new JLabel("欢迎您使用图书管理信息系统", JLabel.CENTER); // 主界面的欢迎信息
-        label.setFont(new Font("隶书", Font.BOLD, 50)); // 信息的字体样式
-        label.setForeground(Color.BLUE); // 信息的字体为蓝色
+        JLabel label = new JLabel("欢迎您使用图书管理系统", JLabel.CENTER); // 主界面的欢迎信息
+        label.setFont(new Font("楷体", Font.BOLD, 50)); // 信息的字体样式
+        label.setForeground(Color.BLACK); // 信息的字体为黑色
         titleFrame = new JInternalFrame(null, true); // 创建多窗体对象，无标题，不可关闭
         Container c = titleFrame.getContentPane(); // 得到此多窗体对象
         c.add(label, BorderLayout.CENTER); // 把欢迎内容添加到多窗体中
         titleFrame.setSize(990, 740); // 设置多窗体的大小
         desktop.add(titleFrame); // 把多窗体添加到虚拟桌面
         titleFrame.setVisible(true); // 设置多窗体可见
-        titleFrame.getContentPane().setBackground(Color.PINK);
+        titleFrame.getContentPane().setBackground(Color.lightGray);//设置背景颜色
         this.setLocationRelativeTo(null);// 主界面居中
         this.setResizable(false); // 主界面大小不可改变
         this.setVisible(true); // 主界面可见
